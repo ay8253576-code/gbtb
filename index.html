@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+  CRITICAL CRYPTOGRAPHIC BRAND & ICON LOCK (DO NOT MODIFY):
+  The brand name "GB STUDY", logo "/logo.png" (SHA-256: c35ec411f81c79d4ee978faef351aaff10bd5c3d74305664aad770d31df8342a),
+  and favicon "/favicon.ico" (SHA-256: 851da1827173bbf9af9fda7683590c7855deb771078cd9ebf64c857876e84b8f)
+  are cryptographically bound to derive the backend E2EE & GB Shield request signatures.
+  Modifying <title>GB STUDY...</title>, "/logo.png", or "/favicon.ico" breaks all API handshakes and triggers the security lock.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>GB STUDY – Online Learning Platform | Batches, Lectures &amp; PDF Notes</title>
+    <meta name="description" content="GB STUDY - Premier Online Learning Platform. Access all batches, recorded & live video lectures, class PDFs, and board exam notes." />
+    <meta name="author" content="GB STUDY" />
+    <meta property="og:site_name" content="GB STUDY" />
+    <meta property="og:title" content="GB STUDY – Online Learning Platform" />
+    <meta property="og:description" content="GB STUDY - Access all batches, video lectures, live classes, and PDF notes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GB STUDY – Online Learning Platform" />
+    <meta name="twitter:description" content="GB STUDY - Access all batches, video lectures, live classes, and PDF notes." />
+    <meta name="twitter:image" content="/logo.png" />
+    <meta name="theme-color" content="#00b862" />
+    <link rel="icon" href="/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Video & PDF runtime engines -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.compiled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.8/hls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      if (window.pdfjsLib) {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+          'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      }
+    </script>
+  </head>
+  <body class="bg-background text-foreground antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
